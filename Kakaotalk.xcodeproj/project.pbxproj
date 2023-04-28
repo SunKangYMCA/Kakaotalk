@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048127BA29F9C82B009A8671 /* MySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048127B929F9C82B009A8671 /* MySectionView.swift */; };
+		04CDABB529F8605500D1CF6B /* KakaotalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABB429F8605500D1CF6B /* KakaotalkApp.swift */; };
+		04CDABB729F8605500D1CF6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABB629F8605500D1CF6B /* ContentView.swift */; };
+		04CDABB929F8605800D1CF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CDABB829F8605800D1CF6B /* Assets.xcassets */; };
+		04CDABBC29F8605800D1CF6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CDABBB29F8605800D1CF6B /* Preview Assets.xcassets */; };
+		04CDABCE29F86A0600D1CF6B /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABCD29F86A0600D1CF6B /* CGFloat.swift */; };
+		04CDABD029F86A9800D1CF6B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABCF29F86A9800D1CF6B /* Font.swift */; };
+		04CDABD229F8766400D1CF6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD129F8766400D1CF6B /* User.swift */; };
+		04CDABD429F885D000D1CF6B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD329F885D000D1CF6B /* Result.swift */; };
+		04CDABD629F8860B00D1CF6B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD529F8860B00D1CF6B /* NetworkManager.swift */; };
+		04CDABD929F8899200D1CF6B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD829F8899200D1CF6B /* SplashView.swift */; };
+		04CDABDB29F889A100D1CF6B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDA29F889A100D1CF6B /* SplashViewModel.swift */; };
+		04CDABDD29F8A95D00D1CF6B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDC29F8A95D00D1CF6B /* ImageView.swift */; };
+		04CDABDF29F8ABDF00D1CF6B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDE29F8ABDF00D1CF6B /* MainView.swift */; };
+		04CDABE129F8ABEC00D1CF6B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE029F8ABEC00D1CF6B /* MainViewModel.swift */; };
+		04CDABE329F8B4D200D1CF6B /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE229F8B4D200D1CF6B /* SettingPage.swift */; };
+		04CDABE529F8B4E100D1CF6B /* PersonPlusPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE429F8B4E100D1CF6B /* PersonPlusPage.swift */; };
+		04CDABE729F8B4F000D1CF6B /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE629F8B4F000D1CF6B /* SearchPage.swift */; };
+		04CDABE929F8BBBB00D1CF6B /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE829F8BBBB00D1CF6B /* MainListView.swift */; };
+		04CDABEB29F8C16000D1CF6B /* ScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABEA29F8C16000D1CF6B /* ScreenState.swift */; };
+		04CDABEF29F8D5AF00D1CF6B /* MainDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABEE29F8D5AF00D1CF6B /* MainDetailView.swift */; };
+		04CDABF129F8ED9200D1CF6B /* TabViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABF029F8ED9200D1CF6B /* TabViewSection.swift */; };
+		04CDABF429F8EEC800D1CF6B /* ComunicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABF329F8EEC800D1CF6B /* ComunicationView.swift */; };
+		04CDABF729F8F26500D1CF6B /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABF629F8F26500D1CF6B /* PhoneView.swift */; };
+		04E5310329FAD36600384FE8 /* ComunicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5310229FAD36600384FE8 /* ComunicationViewModel.swift */; };
+		04E5310529FADB2900384FE8 /* ComuniListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5310429FADB2900384FE8 /* ComuniListView.swift */; };
+		04E5310729FADCCD00384FE8 /* ComuniDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5310629FADCCD00384FE8 /* ComuniDetailView.swift */; };
+		04E5310929FAE31900384FE8 /* OpenChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5310829FAE31900384FE8 /* OpenChatPage.swift */; };
+		04E5310B29FB598500384FE8 /* ProfileSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E5310A29FB598500384FE8 /* ProfileSection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		048127B929F9C82B009A8671 /* MySectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySectionView.swift; sourceTree = "<group>"; };
+		04CDABB129F8605500D1CF6B /* Kakaotalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kakaotalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDABB429F8605500D1CF6B /* KakaotalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaotalkApp.swift; sourceTree = "<group>"; };
+		04CDABB629F8605500D1CF6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04CDABB829F8605800D1CF6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CDABBB29F8605800D1CF6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04CDABCD29F86A0600D1CF6B /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		04CDABCF29F86A9800D1CF6B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		04CDABD129F8766400D1CF6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04CDABD329F885D000D1CF6B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		04CDABD529F8860B00D1CF6B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04CDABD829F8899200D1CF6B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		04CDABDA29F889A100D1CF6B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		04CDABDC29F8A95D00D1CF6B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		04CDABDE29F8ABDF00D1CF6B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		04CDABE029F8ABEC00D1CF6B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		04CDABE229F8B4D200D1CF6B /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		04CDABE429F8B4E100D1CF6B /* PersonPlusPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPlusPage.swift; sourceTree = "<group>"; };
+		04CDABE629F8B4F000D1CF6B /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		04CDABE829F8BBBB00D1CF6B /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		04CDABEA29F8C16000D1CF6B /* ScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenState.swift; sourceTree = "<group>"; };
+		04CDABEE29F8D5AF00D1CF6B /* MainDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDetailView.swift; sourceTree = "<group>"; };
+		04CDABF029F8ED9200D1CF6B /* TabViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewSection.swift; sourceTree = "<group>"; };
+		04CDABF329F8EEC800D1CF6B /* ComunicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunicationView.swift; sourceTree = "<group>"; };
+		04CDABF629F8F26500D1CF6B /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		04E5310229FAD36600384FE8 /* ComunicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunicationViewModel.swift; sourceTree = "<group>"; };
+		04E5310429FADB2900384FE8 /* ComuniListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComuniListView.swift; sourceTree = "<group>"; };
+		04E5310629FADCCD00384FE8 /* ComuniDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComuniDetailView.swift; sourceTree = "<group>"; };
+		04E5310829FAE31900384FE8 /* OpenChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChatPage.swift; sourceTree = "<group>"; };
+		04E5310A29FB598500384FE8 /* ProfileSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CDABAE29F8605500D1CF6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CDABA829F8605500D1CF6B = {
+			isa = PBXGroup;
+			children = (
+				04CDABB329F8605500D1CF6B /* Kakaotalk */,
+				04CDABB229F8605500D1CF6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04CDABB229F8605500D1CF6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABB129F8605500D1CF6B /* Kakaotalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CDABB329F8605500D1CF6B /* Kakaotalk */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABC229F860A700D1CF6B /* Units */,
+				04CDABC629F860E100D1CF6B /* Managers */,
+				04CDABC429F860C800D1CF6B /* Scenes */,
+				04CDABC329F860B000D1CF6B /* UIConponents */,
+				04CDABC529F860DB00D1CF6B /* Model */,
+				04CDABB429F8605500D1CF6B /* KakaotalkApp.swift */,
+				04CDABB629F8605500D1CF6B /* ContentView.swift */,
+				04CDABB829F8605800D1CF6B /* Assets.xcassets */,
+				04CDABBA29F8605800D1CF6B /* Preview Content */,
+			);
+			path = Kakaotalk;
+			sourceTree = "<group>";
+		};
+		04CDABBA29F8605800D1CF6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABBB29F8605800D1CF6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04CDABC229F860A700D1CF6B /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABCC29F8615B00D1CF6B /* Extensions */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		04CDABC329F860B000D1CF6B /* UIConponents */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABF029F8ED9200D1CF6B /* TabViewSection.swift */,
+				04CDABE829F8BBBB00D1CF6B /* MainListView.swift */,
+				04E5310429FADB2900384FE8 /* ComuniListView.swift */,
+				04CDABE629F8B4F000D1CF6B /* SearchPage.swift */,
+				04E5310A29FB598500384FE8 /* ProfileSection.swift */,
+				04CDABE429F8B4E100D1CF6B /* PersonPlusPage.swift */,
+				04CDABE229F8B4D200D1CF6B /* SettingPage.swift */,
+				04E5310829FAE31900384FE8 /* OpenChatPage.swift */,
+				04CDABDC29F8A95D00D1CF6B /* ImageView.swift */,
+				048127B929F9C82B009A8671 /* MySectionView.swift */,
+			);
+			path = UIConponents;
+			sourceTree = "<group>";
+		};
+		04CDABC429F860C800D1CF6B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABCB29F8614600D1CF6B /* Splash */,
+				04CDABC929F8611600D1CF6B /* Main */,
+				04CDABF229F8EEA900D1CF6B /* Comunication */,
+				04CDABF529F8F24C00D1CF6B /* PhoneView */,
+				04CDABCA29F8612C00D1CF6B /* Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		04CDABC529F860DB00D1CF6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABC829F860F500D1CF6B /* CustomObject */,
+				04CDABC729F860F000D1CF6B /* Enum */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04CDABC629F860E100D1CF6B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABD529F8860B00D1CF6B /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		04CDABC729F860F000D1CF6B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABEA29F8C16000D1CF6B /* ScreenState.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		04CDABC829F860F500D1CF6B /* CustomObject */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABD129F8766400D1CF6B /* User.swift */,
+				04CDABD329F885D000D1CF6B /* Result.swift */,
+			);
+			path = CustomObject;
+			sourceTree = "<group>";
+		};
+		04CDABC929F8611600D1CF6B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABDE29F8ABDF00D1CF6B /* MainView.swift */,
+				04CDABE029F8ABEC00D1CF6B /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04CDABCA29F8612C00D1CF6B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABEE29F8D5AF00D1CF6B /* MainDetailView.swift */,
+				04E5310629FADCCD00384FE8 /* ComuniDetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		04CDABCB29F8614600D1CF6B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABD829F8899200D1CF6B /* SplashView.swift */,
+				04CDABDA29F889A100D1CF6B /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		04CDABCC29F8615B00D1CF6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABCD29F86A0600D1CF6B /* CGFloat.swift */,
+				04CDABCF29F86A9800D1CF6B /* Font.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04CDABF229F8EEA900D1CF6B /* Comunication */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABF329F8EEC800D1CF6B /* ComunicationView.swift */,
+				04E5310229FAD36600384FE8 /* ComunicationViewModel.swift */,
+			);
+			path = Comunication;
+			sourceTree = "<group>";
+		};
+		04CDABF529F8F24C00D1CF6B /* PhoneView */ = {
+			isa = PBXGroup;
+			children = (
+				04CDABF629F8F26500D1CF6B /* PhoneView.swift */,
+			);
+			path = PhoneView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CDABB029F8605500D1CF6B /* Kakaotalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDABBF29F8605800D1CF6B /* Build configuration list for PBXNativeTarget "Kakaotalk" */;
+			buildPhases = (
+				04CDABAD29F8605500D1CF6B /* Sources */,
+				04CDABAE29F8605500D1CF6B /* Frameworks */,
+				04CDABAF29F8605500D1CF6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kakaotalk;
+			productName = Kakaotalk;
+			productReference = 04CDABB129F8605500D1CF6B /* Kakaotalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CDABA929F8605500D1CF6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					04CDABB029F8605500D1CF6B = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 04CDABAC29F8605500D1CF6B /* Build configuration list for PBXProject "Kakaotalk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CDABA829F8605500D1CF6B;
+			productRefGroup = 04CDABB229F8605500D1CF6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CDABB029F8605500D1CF6B /* Kakaotalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CDABAF29F8605500D1CF6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDABBC29F8605800D1CF6B /* Preview Assets.xcassets in Resources */,
+				04CDABB929F8605800D1CF6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CDABAD29F8605500D1CF6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDABE929F8BBBB00D1CF6B /* MainListView.swift in Sources */,
+				04CDABEF29F8D5AF00D1CF6B /* MainDetailView.swift in Sources */,
+				04CDABDD29F8A95D00D1CF6B /* ImageView.swift in Sources */,
+				04CDABD429F885D000D1CF6B /* Result.swift in Sources */,
+				04CDABD929F8899200D1CF6B /* SplashView.swift in Sources */,
+				04E5310329FAD36600384FE8 /* ComunicationViewModel.swift in Sources */,
+				04CDABF429F8EEC800D1CF6B /* ComunicationView.swift in Sources */,
+				048127BA29F9C82B009A8671 /* MySectionView.swift in Sources */,
+				04CDABD029F86A9800D1CF6B /* Font.swift in Sources */,
+				04CDABDB29F889A100D1CF6B /* SplashViewModel.swift in Sources */,
+				04CDABE529F8B4E100D1CF6B /* PersonPlusPage.swift in Sources */,
+				04CDABCE29F86A0600D1CF6B /* CGFloat.swift in Sources */,
+				04CDABF729F8F26500D1CF6B /* PhoneView.swift in Sources */,
+				04E5310B29FB598500384FE8 /* ProfileSection.swift in Sources */,
+				04E5310529FADB2900384FE8 /* ComuniListView.swift in Sources */,
+				04E5310929FAE31900384FE8 /* OpenChatPage.swift in Sources */,
+				04CDABD629F8860B00D1CF6B /* NetworkManager.swift in Sources */,
+				04CDABDF29F8ABDF00D1CF6B /* MainView.swift in Sources */,
+				04E5310729FADCCD00384FE8 /* ComuniDetailView.swift in Sources */,
+				04CDABB729F8605500D1CF6B /* ContentView.swift in Sources */,
+				04CDABE329F8B4D200D1CF6B /* SettingPage.swift in Sources */,
+				04CDABD229F8766400D1CF6B /* User.swift in Sources */,
+				04CDABB529F8605500D1CF6B /* KakaotalkApp.swift in Sources */,
+				04CDABEB29F8C16000D1CF6B /* ScreenState.swift in Sources */,
+				04CDABE129F8ABEC00D1CF6B /* MainViewModel.swift in Sources */,
+				04CDABE729F8B4F000D1CF6B /* SearchPage.swift in Sources */,
+				04CDABF129F8ED9200D1CF6B /* TabViewSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04CDABBD29F8605800D1CF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04CDABBE29F8605800D1CF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CDABC029F8605800D1CF6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kakaotalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KLL75S4S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SunKang.Kakaotalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CDABC129F8605800D1CF6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kakaotalk/Preview Content\"";
+				DEVELOPMENT_TEAM = 7KLL75S4S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SunKang.Kakaotalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CDABAC29F8605500D1CF6B /* Build configuration list for PBXProject "Kakaotalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDABBD29F8605800D1CF6B /* Debug */,
+				04CDABBE29F8605800D1CF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CDABBF29F8605800D1CF6B /* Build configuration list for PBXNativeTarget "Kakaotalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDABC029F8605800D1CF6B /* Debug */,
+				04CDABC129F8605800D1CF6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CDABA929F8605500D1CF6B /* Project object */;
+}
