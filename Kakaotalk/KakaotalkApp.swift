@@ -15,3 +15,5 @@ struct KakaotalkApp: App {
         }
     }
 }
+
+// AppDelegate can be useful
