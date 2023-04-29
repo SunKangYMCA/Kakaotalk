@@ -19,7 +19,6 @@ struct TabViewSection: View {
                 
             }
             
-            
             NavigationView {
                 ComunicationView()
             }
@@ -28,7 +27,6 @@ struct TabViewSection: View {
                 
             }
             
-            
             NavigationView {
                 PhoneView()
             }
@@ -36,7 +34,6 @@ struct TabViewSection: View {
                 Label("", systemImage: "phone")
                 
             }
-            
             
             NavigationView {
                 SettingPage()
