@@ -39,7 +39,7 @@ struct TabViewSection: View {
                 SettingPage()
             }
             .tabItem {
-                Label("Setting", systemImage: "ellipsis")
+                Label("Settings", systemImage: "ellipsis")
                 
             }
         }
