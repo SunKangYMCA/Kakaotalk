@@ -15,7 +15,7 @@ struct TabViewSection: View {
                 MainView()
             }
             .tabItem {
-                Label("", systemImage: "person")
+                Label("Main", systemImage: "person")
                 
             }
             
@@ -23,7 +23,7 @@ struct TabViewSection: View {
                 ComunicationView()
             }
             .tabItem {
-                Label("", systemImage: "message")
+                Label("Chat", systemImage: "message")
                 
             }
             
@@ -31,7 +31,7 @@ struct TabViewSection: View {
                 PhoneView()
             }
             .tabItem {
-                Label("", systemImage: "phone")
+                Label("Phone", systemImage: "phone")
                 
             }
             
@@ -39,7 +39,7 @@ struct TabViewSection: View {
                 SettingPage()
             }
             .tabItem {
-                Label("", systemImage: "ellipsis")
+                Label("Settings", systemImage: "ellipsis")
                 
             }
         }
