@@ -46,7 +46,7 @@ struct ComuniDetailView: View {
                 Button {
                     shouldShowSearchView.toggle()
                 } label: {
-                    Image(systemName: "magmifyingglass")
+                    Image(systemName: "magnifyingglass")
                 }
                 
                 Button {
