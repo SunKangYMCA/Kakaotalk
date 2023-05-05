@@ -1,6 +1,6 @@
 //
 //  MainListView.swift
-//  111
+//  Kakaotalk
 //
 //  Created by 강성찬 on 2023-05-01.
 //
@@ -12,6 +12,7 @@ struct MainListView: View {
     var user: User
     
     var body: some View {
+        
         HStack(spacing: 16) {
             AsyncImageCircleTypeSection(
                 title: user.thumbnailPictureURL,
