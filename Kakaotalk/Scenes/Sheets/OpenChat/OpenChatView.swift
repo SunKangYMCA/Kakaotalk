@@ -20,7 +20,7 @@ struct OpenChatView: View {
             TextSection(
                 title: "Open Chat Service\nCommig Soon",
                 font: .hugeHeavy,
-                inColor: .orange
+                textColor: .orange
                 
             )
             .multilineTextAlignment(.center)

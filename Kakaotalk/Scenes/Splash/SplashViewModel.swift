@@ -15,7 +15,7 @@ class SplashViewModel: ObservableObject {
         UITabBar.appearance().barTintColor = UIColor.white
     }
     
-    func onViewAppear() {
+    func showTabView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             withAnimation {
                 self.shouldShowTabViewSection.toggle()

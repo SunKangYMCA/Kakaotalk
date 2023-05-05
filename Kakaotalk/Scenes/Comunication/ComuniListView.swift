@@ -25,7 +25,7 @@ struct ComuniListView: View {
                     TextSection(
                         title: user.name.first,
                         font: .normalHeavy,
-                        inColor: .black
+                        textColor: .black
                     )
                     Spacer()
                 }
@@ -34,7 +34,7 @@ struct ComuniListView: View {
                     TextSection(
                         title: user.location.timezone.description,
                         font: .small,
-                        inColor: .gray
+                        textColor: .gray
                     )
                     Spacer()
                 }

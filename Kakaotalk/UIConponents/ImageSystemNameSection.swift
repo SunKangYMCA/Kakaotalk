@@ -10,18 +10,18 @@ import SwiftUI
 struct ImageSystemNameSection: View {
     
     private let title: String
-    private let inColor: Color
+    private let textColor: Color
     private let width: CGFloat
     private let height: CGFloat
     
     init(
         title: String,
-        inColor: Color,
+        textColor: Color,
         width: CGFloat,
         height: CGFloat
     ) {
         self.title = title
-        self.inColor = inColor
+        self.textColor = textColor
         self.width = width
         self.height = height
     }
@@ -30,7 +30,7 @@ struct ImageSystemNameSection: View {
         
         Image(systemName: title)
             .resizable()
-            .foregroundColor(inColor)
+            .foregroundColor(textColor)
             .frame(width: width, height: height)
     }
 }

@@ -13,18 +13,18 @@ struct DismissCancelSection: View {
     
     private var title: String
     private var font: Font.SKFontType
-    private var inColor: Color
+    private var textColor: Color
     private var onSubmit: () -> Void
     
     init(
         title: String,
         font: Font.SKFontType,
-        inColor: Color,
+        textColor: Color,
         onSubmit: @escaping () -> Void
     ) {
         self.title = title
         self.font = font
-        self.inColor = inColor
+        self.textColor = textColor
         self.onSubmit = onSubmit
     }
     
@@ -34,7 +34,7 @@ struct DismissCancelSection: View {
         } label: {
             Text(title)
                 .font(.skFont(type: font))
-                .foregroundColor(inColor)
+                .foregroundColor(textColor)
         }
         .onSubmit {
             onSubmit()

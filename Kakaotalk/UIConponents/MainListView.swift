@@ -2,7 +2,7 @@
 //  MainListView.swift
 //  Kakaotalk
 //
-//  Created by 강성찬 on 2023-05-01.
+//  Created by 강성찬 on 2023-05-02.
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct MainListView: View {
     
     var body: some View {
         
-        HStack(spacing: 16) {
+        HStack(spacing: 24) {
             AsyncImageCircleTypeSection(
                 title: user.thumbnailPictureURL,
                 width: 48,
@@ -26,7 +26,7 @@ struct MainListView: View {
                     TextSection(
                         title: user.fullName,
                         font: .smallBold,
-                        inColor: .black
+                        textColor: .black
                     )
                     Spacer()
                 }
@@ -34,7 +34,7 @@ struct MainListView: View {
                     TextSection(
                         title: "\(user.location.city)\t\(user.location.state)",
                         font: .small,
-                        inColor: .gray
+                                                textColor: .gray
                     )
                     Spacer()
                 }

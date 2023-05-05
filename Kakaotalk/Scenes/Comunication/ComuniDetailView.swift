@@ -78,7 +78,7 @@ struct ComuniDetailView: View {
                     TextSection(
                         title: user.name.first,
                         font: .small,
-                        inColor: .gray
+                        textColor: .gray
                     )
                     .padding(.bottom, 5)
                     Spacer()

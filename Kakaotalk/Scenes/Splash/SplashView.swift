@@ -18,7 +18,7 @@ struct SplashView: View {
             } else {
                 ImageSection
                     .onAppear {
-                        viewModel.onViewAppear()
+                        viewModel.showTabView()
                     }
             }
         }

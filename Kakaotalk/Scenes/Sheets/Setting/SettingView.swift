@@ -23,7 +23,7 @@ struct SettingView: View {
                             TextSection(
                                 title: "Sun Kang",
                                 font: .smallBold,
-                                inColor: .black
+                                textColor: .black
                             )
                             Spacer()
                         }
@@ -31,7 +31,7 @@ struct SettingView: View {
                             TextSection(
                                 title: "hbty248@naver.com",
                                 font: .small,
-                                inColor: .gray
+                                textColor: .gray
                             )
                             Spacer()
                         }

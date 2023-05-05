@@ -11,22 +11,22 @@ struct TextSection: View {
     
     private let title: String
     private let font: Font.SKFontType
-    private let inColor: Color
+    private let textColor: Color
     
     init(
         title: String,
         font: Font.SKFontType,
-        inColor: Color
+        textColor: Color
     ) {
         self.title = title
         self.font = font
-        self.inColor = inColor
+        self.textColor = textColor
     }
     
     var body: some View {
         VStack {
             Text(title)
-                .foregroundColor(inColor)
+                .foregroundColor(textColor)
                 .font(.skFont(type: font))
                 
         }

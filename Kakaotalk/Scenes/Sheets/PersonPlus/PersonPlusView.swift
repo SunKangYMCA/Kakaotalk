@@ -33,7 +33,7 @@ struct PersonPlusView: View {
                 DismissXmarkSection(
                     width: 20,
                     height: 20,
-                    inColor: .black,
+                    textColor: .black,
                     onSubmit: {
                         print("## Test Submit Dismiss")
                     }
@@ -48,7 +48,7 @@ struct PersonPlusView: View {
             TextSection(
                 title: "Add",
                 font: .normalBold,
-                inColor: .black
+                textColor: .black
             )
             Spacer()
         }
@@ -62,7 +62,7 @@ struct PersonPlusView: View {
                 width: 48,
                 height: 48,
                 title: "QR Code",
-                inColor: .black
+                textColor: .black
                 
             )
             
@@ -71,7 +71,7 @@ struct PersonPlusView: View {
                 width: 48,
                 height: 48,
                 title: "Add by\nContacts",
-                inColor: .black
+                textColor: .black
             )
             
             ImageLinkSection(
@@ -79,7 +79,7 @@ struct PersonPlusView: View {
                 width: 48,
                 height: 48,
                 title: "Add by ID",
-                inColor: .black
+                textColor: .black
             )
             
             ImageLinkSection(
@@ -87,7 +87,7 @@ struct PersonPlusView: View {
                 width: 48,
                 height: 48,
                 title: "Invite",
-                inColor: .black
+                textColor: .black
             )
         }
         .padding(.top, 50)

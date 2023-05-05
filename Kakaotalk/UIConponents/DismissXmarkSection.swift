@@ -13,18 +13,18 @@ struct DismissXmarkSection: View {
     
     private var width: CGFloat
     private var height: CGFloat
-    private var inColor: Color
+    private var textColor: Color
     private var onSubmit: () -> Void
     
     init(
         width: CGFloat,
         height: CGFloat,
-        inColor: Color,
+        textColor: Color,
         onSubmit: @escaping () -> Void
     ) {
         self.width = width
         self.height = height
-        self.inColor = inColor
+        self.textColor = textColor
         self.onSubmit = onSubmit
     }
     
@@ -36,7 +36,7 @@ struct DismissXmarkSection: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: width, height: height)
-                .foregroundColor(inColor)
+                .foregroundColor(textColor)
         }
         .onSubmit {
             onSubmit()

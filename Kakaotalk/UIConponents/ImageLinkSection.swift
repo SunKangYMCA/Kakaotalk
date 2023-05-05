@@ -14,7 +14,7 @@ struct ImageLinkSection: View {
     private let width: CGFloat
     private let height: CGFloat
     private let title: String
-    private let inColor: Color
+    private let textColor: Color
     
     init(
 //        destination: @escaping ()-> AnyView,
@@ -22,7 +22,7 @@ struct ImageLinkSection: View {
         width: CGFloat,
         height: CGFloat,
         title: String,
-        inColor: Color
+        textColor: Color
         
     ) {
 //        self.destination = destination
@@ -30,7 +30,7 @@ struct ImageLinkSection: View {
         self.width = width
         self.height = height
         self.title = title
-        self.inColor = inColor
+        self.textColor = textColor
         
     }
     
@@ -47,7 +47,7 @@ struct ImageLinkSection: View {
                     .frame(width: width, height: height)
                 Text(title)
             }
-            .foregroundColor(inColor)
+            .foregroundColor(textColor)
         }
     }
 }

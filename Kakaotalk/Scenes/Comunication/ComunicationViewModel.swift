@@ -17,9 +17,7 @@ class ComunicationViewModel:
     
     @Published var users: [User] = []
     
-    private var networkManager:
-    NetworkManager =
-    NetworkManager.shared
+    private var networkManager: NetworkManager = NetworkManager.shared
     
     init() {
         fetchUsers()

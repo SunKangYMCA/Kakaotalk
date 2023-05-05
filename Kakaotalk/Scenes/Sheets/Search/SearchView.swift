@@ -22,14 +22,14 @@ struct SearchView: View {
                     binding: $viewModel.text,
                     placeholder: "Search",
                     font: .normalBold,
-                    outColor: .gray,
+                    backgroundColor: .gray,
                     opacity: 0.2,
                     keyboardType: .default
                 )
                 DismissCancelSection(
                     title: "Cancle",
                     font: .normalBold,
-                    inColor: .black,
+                    textColor: .black,
                     onSubmit: {
                         print("## test submit dismiss")
                     }
@@ -42,30 +42,30 @@ struct SearchView: View {
                 TextSection(
                     title: "Recent",
                     font: .smallBold,
-                    inColor: .black
+                    textColor: .black
                 )
                 TextSection(
                     title: "Clear All",
                     font: .smallBold,
-                    inColor: .gray
+                    textColor: .gray
                 )
                 TextSection(
                     title: "Auto Save OFF",
                     font: .small,
-                    inColor: .gray
+                    textColor: .gray
                 )
                 
                 Spacer()
             }
             .padding(.horizontal, 16)
             
-            ProfileSection
+            profileSection
             
             Spacer()
         }
     }
     
-    private var ProfileSection: some View {
+    private var profileSection: some View {
         ScrollView(.horizontal) {
             LazyHGrid(rows: rows) {
                 ForEach(users) { user in
@@ -80,7 +80,7 @@ struct SearchView: View {
                         TextSection(
                             title: user.fullName,
                             font: .smallBold,
-                            inColor: .black
+                            textColor: .black
                         )
                         
                     }

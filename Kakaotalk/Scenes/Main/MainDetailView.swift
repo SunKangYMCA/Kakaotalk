@@ -21,7 +21,7 @@ struct MainDetailView: View {
                     .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
             } placeholder: {
-                Image(systemName: "persom")
+                Image(systemName: "person")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100, height: 100)
@@ -48,13 +48,13 @@ struct MainDetailView: View {
                 TextSection(
                     title: user.fullName,
                     font: .largeHeavy,
-                    inColor: .white)
+                    textColor: .white)
                 .shadow(color: .black, radius: 5)
                 
                 TextSection(
                     title: shouldShowComment ? "Have Good Day, Everone!!" : "Thank for Visit",
                     font: .normal,
-                    inColor: .white
+                    textColor: .white
                 )
             }
             .onAppear {
@@ -64,7 +64,7 @@ struct MainDetailView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     ImageSystemNameSection(
                         title: "speaker.slash.fill",
-                        inColor: .white,
+                        textColor: .white,
                         width: 24,
                         height: 24
                     )
@@ -74,7 +74,7 @@ struct MainDetailView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     ImageSystemNameSection(
                         title: "person.circle",
-                        inColor: .white,
+                        textColor: .white,
                         width: 32,
                         height: 32
                     )
@@ -82,7 +82,7 @@ struct MainDetailView: View {
 
                     ImageSystemNameSection(
                         title: "star.circle",
-                        inColor: .white,
+                        textColor: .white,
                         width: 32,
                         height: 32
                     )

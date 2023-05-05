@@ -20,7 +20,7 @@ struct PhoneView: View {
             TextSection(
                 title: "Phone Call Service\nCommig Soon",
                 font: .hugeHeavy,
-                inColor: .red
+                textColor: .red
                 
             )
             .multilineTextAlignment(.center)

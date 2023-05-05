@@ -12,7 +12,7 @@ struct SearchFieldSection: View {
     private var binding: Binding<String>
     private let placeholder: String
     private let font: Font.SKFontType
-    private let outColor: Color
+    private let backgroundColor: Color
     private let opacity: Double
     private let keyboardType: UIKit.UIKeyboardType
     
@@ -20,14 +20,14 @@ struct SearchFieldSection: View {
         binding: Binding<String>,
         placeholder: String,
         font: Font.SKFontType,
-        outColor: Color,
+        backgroundColor: Color,
         opacity: Double,
         keyboardType: UIKit.UIKeyboardType
     ) {
         self.binding = binding
         self.placeholder = placeholder
         self.font = font
-        self.outColor = outColor
+        self.backgroundColor = backgroundColor
         self.opacity = opacity
         self.keyboardType = keyboardType
     }
@@ -42,7 +42,7 @@ struct SearchFieldSection: View {
         }
         .padding()
         .background(
-            outColor
+            backgroundColor
                 .opacity(opacity)
                 .cornerRadius(.cornerRadius)
         )
@@ -53,6 +53,6 @@ struct SearchFieldSection: View {
 
 struct SearchFieldSection_Previews: PreviewProvider {
     static var previews: some View {
-        SearchFieldSection(binding: .constant("String"), placeholder: "", font: .small, outColor: .blue, opacity: 0.2, keyboardType: .default)
+        SearchFieldSection(binding: .constant("String"), placeholder: "", font: .small, backgroundColor: .blue, opacity: 0.2, keyboardType: .default)
     }
 }
