@@ -1,13 +1,13 @@
 //
-//  MainListView.swift
+//  ComuniListView.swift
 //  111
 //
-//  Created by 강성찬 on 2023-05-01.
+//  Created by 강성찬 on 2023-05-04.
 //
 
 import SwiftUI
 
-struct MainListView: View {
+struct ComuniListView: View {
     
     var user: User
     
@@ -15,23 +15,24 @@ struct MainListView: View {
         HStack(spacing: 16) {
             AsyncImageCircleTypeSection(
                 title: user.thumbnailPictureURL,
-                width: 48,
-                height: 48,
+                width: 64,
+                height: 64,
                 placeholderSysname: "person"
             )
-     
+            
             VStack {
                 HStack {
                     TextSection(
-                        title: user.fullName,
-                        font: .smallBold,
+                        title: user.name.first,
+                        font: .normalHeavy,
                         inColor: .black
                     )
                     Spacer()
                 }
+                
                 HStack {
                     TextSection(
-                        title: "\(user.location.city)\t\(user.location.state)",
+                        title: user.location.timezone.description,
                         font: .small,
                         inColor: .gray
                     )
@@ -42,8 +43,8 @@ struct MainListView: View {
     }
 }
 
-struct MainListView_Previews: PreviewProvider {
+struct ComuniListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainListView(user: .mockUser)
+        ComuniListView(user: User.mockUser)
     }
 }

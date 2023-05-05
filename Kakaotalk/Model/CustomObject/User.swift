@@ -1,8 +1,8 @@
 //
 //  User.swift
-//  Kakaotalk
+//  111
 //
-//  Created by 강성찬 on 2023-04-25.
+//  Created by 강성찬 on 2023-05-01.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct User: Codable, Identifiable {
     var picture: UserPicture
     
     var fullName: String {
-        name.first + " " + name.last
+    name.first + " " + name.last
     }
     
     var id: String {
@@ -47,10 +47,10 @@ struct User: Codable, Identifiable {
                 first: "Sun",
                 last: "Kang"
             ),
-             location: UserLocation(
+            location: UserLocation(
                 street: UserStreet(
                     number: 38,
-                    name: "Cobourg Lane"
+                    name: "cobourg lane"
                 ),
                 city: "Stratford",
                 state: "Ontario",
@@ -59,24 +59,18 @@ struct User: Codable, Identifiable {
                     offset: "+09:30",
                     description: "Adelaide, Darwin"
                 )
-             ),
-             email: "sun@test.com",
-             login: UserLogin(
-                uuid: "12345"
-             ),
-            dob: UserDob(
-                age: 40
             ),
-            registered: UserRegistered(
-                age: 38
-            ),
-             phone: "123-123-1234",
-             cell: "234-234-2345",
-             picture: UserPicture(
+            email: "Sun@test.com",
+            login: UserLogin(uuid: "12345"),
+            dob: UserDob(age: 40),
+            registered: UserRegistered(age: 38),
+            phone: "123-123-1234",
+            cell: "234-234-2345",
+            picture: UserPicture(
                 large: "",
                 medium: "",
                 thumbnail: ""
-             )
+            )
         )
     }
 }

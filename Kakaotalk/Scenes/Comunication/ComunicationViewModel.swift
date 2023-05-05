@@ -1,22 +1,25 @@
 //
 //  ComunicationViewModel.swift
-//  Kakaotalk
+//  111
 //
-//  Created by 강성찬 on 2023-04-27.
+//  Created by 강성찬 on 2023-05-04.
 //
 
 import SwiftUI
 
-class ComunicationViewModel: ObservableObject {
+class ComunicationViewModel:
+    ObservableObject {
     
-    @Published var shouldShowSearchPage: Bool = false
-    @Published var shouldShowComuniPlusPage: Bool = false
-    @Published var shouldShowOpenChatPage: Bool = false
-    @Published var shouldShowSettingPage: Bool = false
+    @Published var shouldShowSeachView: Bool = false
+    @Published var shouldShowComuniPlusView: Bool = false
+    @Published var shouldShowOpenChatView: Bool = false
+    @Published var shouldShowSettingView: Bool = false
     
     @Published var users: [User] = []
     
-    private var networkManager: NetworkManager = NetworkManager.shared
+    private var networkManager:
+    NetworkManager =
+    NetworkManager.shared
     
     init() {
         fetchUsers()

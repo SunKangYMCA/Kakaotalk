@@ -1,8 +1,8 @@
 //
 //  MainView.swift
-//  Kakaotalk
+//  111
 //
-//  Created by 강성찬 on 2023-04-25.
+//  Created by 강성찬 on 2023-04-29.
 //
 
 import SwiftUI
@@ -11,23 +11,17 @@ struct MainView: View {
     
     @StateObject var viewModel: MainViewModel = MainViewModel()
     
-    init(){
-
-    }
-    
-    
     var body: some View {
         
-            List {
-                ForEach(viewModel.users) { user in
-                    NavigationLink {
-                        MainDetailView(user: user)
-                    } label: {
-                        MainListView(user: user)
-                    }
-                    
+        List {
+            ForEach(viewModel.users) { user in
+                NavigationLink {
+                    MainDetailView(user: user)
+                } label: {
+                    MainListView(user: user)
                 }
             }
+        }
         
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -35,51 +29,44 @@ struct MainView: View {
                     .font(.skFont(type: .largeHeavy))
             }
         }
-        
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button {
-                    viewModel.shouldShowSearchPage.toggle()
+                    viewModel.shouldShowSearchView.toggle()
                 } label: {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.black)
                 }
                 
                 Button {
-                    withAnimation(.easeIn) {
-                        viewModel.shouldShowPersonPage.toggle()
-                    }
+                    viewModel.shouldShowPersonPlusView.toggle()
                 } label: {
                     Image(systemName: "person.badge.plus")
                         .foregroundColor(.black)
                 }
                 
                 Button {
-                    viewModel.shouldShowSettingPage.toggle()
+                    viewModel.shouldShowSettingView.toggle()
                 } label: {
                     Image(systemName: "gearshape")
                         .foregroundColor(.black)
                 }
-                
-                }
-            
-            
+            }
         }
-        .sheet(isPresented: $viewModel.shouldShowSearchPage) {
-            SearchPage(users: viewModel.users)
+        
+        .sheet(isPresented: $viewModel.shouldShowSearchView) {
+            SearchView(users: viewModel.users)
         }
-        .sheet(isPresented: $viewModel.shouldShowPersonPage) {
-            PersonPlusPage()
+        
+        .sheet(isPresented: $viewModel.shouldShowPersonPlusView) {
+            PersonPlusView()
         }
-        .sheet(isPresented: $viewModel.shouldShowSettingPage) {
-            SettingPage()
+        
+        .sheet(isPresented: $viewModel.shouldShowSettingView) {
+            SettingView()
         }
     }
-    
-    
 }
-
-
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {

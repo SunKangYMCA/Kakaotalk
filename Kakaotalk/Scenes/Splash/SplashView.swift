@@ -13,13 +13,69 @@ struct SplashView: View {
     
     var body: some View {
         Group {
-            if viewModel.shouldShowMainPage {
-                TabViewSection()
+            if viewModel.shouldShowTabViewSection {
+                TabViewSection
             } else {
-                ImageView()
+                ImageSection
                     .onAppear {
-                        viewModel.onViewApper()
+                        viewModel.onViewAppear()
                     }
+            }
+        }
+    }
+    
+    private var TabViewSection: some View {
+        TabView {
+            NavigationView {
+                MainView()
+            }
+            .tabItem {
+                Label("Main", systemImage: "person")
+            }
+            
+            NavigationView {
+                ComunicationView()
+            }
+            .tabItem {
+                Label("Chat", systemImage: "message")
+            }
+            
+            NavigationView {
+                PhoneView()
+            }
+            .tabItem {
+                Label("Phone", systemImage: "phone")
+            }
+            
+            NavigationView {
+                SettingView()
+            }
+            .tabItem {
+                Label("Settings", systemImage: "ellipsis")
+            }
+        }
+        .accentColor(.black)
+    }
+    
+    
+    private var ImageSection: some View {
+        
+        ZStack {
+            Color(.yellow)
+                .opacity(0.8)
+                .ignoresSafeArea()
+            
+            VStack {
+                Text("TALK")
+                    .font(.skFont(type: .hugeHeavy))
+                    .foregroundColor(.yellow)
+                    .padding(.bottom, 20)
+                    .background(
+                        Image(systemName: "message.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 150)
+                    )
             }
         }
     }

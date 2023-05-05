@@ -1,18 +1,20 @@
 //
 //  ComunicationView.swift
-//  Kakaotalk
+//  111
 //
-//  Created by 강성찬 on 2023-04-26.
+//  Created by 강성찬 on 2023-05-01.
 //
 
 import SwiftUI
 
 struct ComunicationView: View {
     
-    @StateObject var viewModel: ComunicationViewModel = ComunicationViewModel()
+    @StateObject var viewModel:
+    ComunicationViewModel =
+    ComunicationViewModel()
     
     var body: some View {
-        List() {
+        List {
             ForEach(viewModel.users) { user in
                 NavigationLink {
                     ComuniDetailView(user: user)
@@ -20,8 +22,6 @@ struct ComunicationView: View {
                     ComuniListView(user: user)
                 }
             }
-            // init을 사용했더니 Row Color는 적용안해도 설정이 됨.
-//            .listRowBackground(Color.white)
             .frame(height: 100)
         }
         .toolbar {
@@ -33,42 +33,40 @@ struct ComunicationView: View {
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button {
-                    viewModel.shouldShowSearchPage.toggle()
+                    viewModel.shouldShowSeachView.toggle()
                 } label: {
                     Image(systemName: "magnifyingglass")
                 }
                 
                 Button {
-                    viewModel.shouldShowComuniPlusPage.toggle()
+                    viewModel.shouldShowComuniPlusView.toggle()
                 } label: {
                     Image(systemName: "plus.bubble")
                 }
-                
+
                 Button {
-                    viewModel.shouldShowOpenChatPage.toggle()
+                    viewModel.shouldShowOpenChatView.toggle()
                 } label: {
                     Image(systemName: "bubble.left.and.bubble.right")
                 }
-                
                 Button {
-                    viewModel.shouldShowSettingPage.toggle()
+                    viewModel.shouldShowSettingView.toggle()
                 } label: {
                     Image(systemName: "gearshape")
                 }
-                
             }
         }
-        .sheet(isPresented: $viewModel.shouldShowSearchPage) {
-            SearchPage(users: viewModel.users)
+        .sheet(isPresented: $viewModel.shouldShowSeachView) {
+            SearchView(users: viewModel.users)
         }
-        .sheet(isPresented: $viewModel.shouldShowComuniPlusPage) {
-            PersonPlusPage()
+        .sheet(isPresented: $viewModel.shouldShowComuniPlusView) {
+            PersonPlusView()
         }
-        .sheet(isPresented: $viewModel.shouldShowOpenChatPage) {
-            OpenChatPage()
+        .sheet(isPresented: $viewModel.shouldShowOpenChatView) {
+            OpenChatView()
         }
-        .sheet(isPresented: $viewModel.shouldShowSettingPage) {
-            SettingPage()
+        .sheet(isPresented: $viewModel.shouldShowSettingView) {
+            SettingView()
         }
     }
 }
