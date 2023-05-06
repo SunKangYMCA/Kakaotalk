@@ -9,18 +9,19 @@ import SwiftUI
 
 class SplashViewModel: ObservableObject {
     
-    @Published var shouldShowMainPage: Bool = false
+    @Published var shouldShowTabViewSection: Bool = false
     
     init() {
-    UITabBar.appearance().barTintColor = UIColor.white
+        UITabBar.appearance().barTintColor = UIColor.white
     }
     
-    func onViewApper() {
+    func showTabView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             withAnimation {
-                self.shouldShowMainPage.toggle()
+                self.shouldShowTabViewSection.toggle()
             }
         }
     }
 }
+
 

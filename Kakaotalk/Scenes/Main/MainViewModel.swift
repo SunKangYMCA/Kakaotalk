@@ -9,9 +9,9 @@ import SwiftUI
 
 class MainViewModel: ObservableObject {
     
-    @Published var shouldShowSearchPage: Bool = false
-    @Published var shouldShowPersonPage: Bool = false
-    @Published var shouldShowSettingPage: Bool = false
+    @Published var shouldShowSearchView: Bool = false
+    @Published var shouldShowPersonPlusView: Bool = false
+    @Published var shouldShowSettingView: Bool = false
     
     @Published var users: [User] = []
     
@@ -31,7 +31,6 @@ class MainViewModel: ObservableObject {
                     return
                 }
                 self.users = fetchedUsers
-
             }
         }
     }
