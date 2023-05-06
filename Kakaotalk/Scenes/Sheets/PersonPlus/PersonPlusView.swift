@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PersonPlusView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -30,14 +33,19 @@ struct PersonPlusView: View {
     private var PersonSearchSection: some View {
         ZStack {
             HStack {
-                DismissXmarkSection(
-                    width: 20,
-                    height: 20,
-                    textColor: .black,
-                    onSubmit: {
-                        print("## Test Submit Dismiss")
-                    }
-                )
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.black)
+                }
+                .onSubmit {
+                    print("## Test Submit Desmiss")
+                }
+                
                 .padding(.horizontal, 16)
                 
                 Spacer()

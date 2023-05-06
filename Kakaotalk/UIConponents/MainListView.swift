@@ -14,7 +14,7 @@ struct MainListView: View {
     var body: some View {
         
         HStack(spacing: 24) {
-            AsyncImageCircleTypeSection(
+            CircledImage(
                 title: user.thumbnailPictureURL,
                 width: 48,
                 height: 48,

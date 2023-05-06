@@ -13,7 +13,7 @@ struct ComuniListView: View {
     
     var body: some View {
         HStack(spacing: 16) {
-            AsyncImageCircleTypeSection(
+            CircledImage(
                 title: user.thumbnailPictureURL,
                 width: 64,
                 height: 64,

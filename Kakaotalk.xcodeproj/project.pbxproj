@@ -11,7 +11,6 @@
 		04BC0A462A05722500DBE79D /* QRImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A452A05722500DBE79D /* QRImageView.swift */; };
 		04BC0A4A2A0572AB00DBE79D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A492A0572AB00DBE79D /* SearchViewModel.swift */; };
 		04BC0A4C2A0573A500DBE79D /* SearchFieldSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A4B2A0573A500DBE79D /* SearchFieldSection.swift */; };
-		04BC0A4E2A0573B200DBE79D /* DismissCancelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A4D2A0573B200DBE79D /* DismissCancelSection.swift */; };
 		04BC0A502A0573B900DBE79D /* DismissXmarkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A4F2A0573B900DBE79D /* DismissXmarkSection.swift */; };
 		04BC0A522A0573C000DBE79D /* ImageLinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC0A512A0573C000DBE79D /* ImageLinkSection.swift */; };
 		04CDABB529F8605500D1CF6B /* KakaotalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABB429F8605500D1CF6B /* KakaotalkApp.swift */; };
@@ -24,7 +23,7 @@
 		04CDABD629F8860B00D1CF6B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD529F8860B00D1CF6B /* NetworkManager.swift */; };
 		04CDABD929F8899200D1CF6B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABD829F8899200D1CF6B /* SplashView.swift */; };
 		04CDABDB29F889A100D1CF6B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDA29F889A100D1CF6B /* SplashViewModel.swift */; };
-		04CDABDD29F8A95D00D1CF6B /* AsyncImageCircleTypeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDC29F8A95D00D1CF6B /* AsyncImageCircleTypeSection.swift */; };
+		04CDABDD29F8A95D00D1CF6B /* CircledImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDC29F8A95D00D1CF6B /* CircledImage.swift */; };
 		04CDABDF29F8ABDF00D1CF6B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABDE29F8ABDF00D1CF6B /* MainView.swift */; };
 		04CDABE129F8ABEC00D1CF6B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE029F8ABEC00D1CF6B /* MainViewModel.swift */; };
 		04CDABE329F8B4D200D1CF6B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDABE229F8B4D200D1CF6B /* SettingView.swift */; };
@@ -48,7 +47,6 @@
 		04BC0A452A05722500DBE79D /* QRImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRImageView.swift; sourceTree = "<group>"; };
 		04BC0A492A0572AB00DBE79D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		04BC0A4B2A0573A500DBE79D /* SearchFieldSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldSection.swift; sourceTree = "<group>"; };
-		04BC0A4D2A0573B200DBE79D /* DismissCancelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissCancelSection.swift; sourceTree = "<group>"; };
 		04BC0A4F2A0573B900DBE79D /* DismissXmarkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissXmarkSection.swift; sourceTree = "<group>"; };
 		04BC0A512A0573C000DBE79D /* ImageLinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLinkSection.swift; sourceTree = "<group>"; };
 		04CDABB129F8605500D1CF6B /* Kakaotalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kakaotalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +60,7 @@
 		04CDABD529F8860B00D1CF6B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		04CDABD829F8899200D1CF6B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		04CDABDA29F889A100D1CF6B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		04CDABDC29F8A95D00D1CF6B /* AsyncImageCircleTypeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageCircleTypeSection.swift; sourceTree = "<group>"; };
+		04CDABDC29F8A95D00D1CF6B /* CircledImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledImage.swift; sourceTree = "<group>"; };
 		04CDABDE29F8ABDF00D1CF6B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		04CDABE029F8ABEC00D1CF6B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		04CDABE229F8B4D200D1CF6B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -197,10 +195,9 @@
 			children = (
 				04CDABF029F8ED9200D1CF6B /* TextSection.swift */,
 				04E5310A29FB598500384FE8 /* ImageSystemNameSection.swift */,
-				04CDABDC29F8A95D00D1CF6B /* AsyncImageCircleTypeSection.swift */,
+				04CDABDC29F8A95D00D1CF6B /* CircledImage.swift */,
 				048127B929F9C82B009A8671 /* TextFieldSection.swift */,
 				04BC0A4B2A0573A500DBE79D /* SearchFieldSection.swift */,
-				04BC0A4D2A0573B200DBE79D /* DismissCancelSection.swift */,
 				04BC0A4F2A0573B900DBE79D /* DismissXmarkSection.swift */,
 				04BC0A512A0573C000DBE79D /* ImageLinkSection.swift */,
 			);
@@ -373,7 +370,7 @@
 			files = (
 				04CDABE929F8BBBB00D1CF6B /* MainListView.swift in Sources */,
 				04CDABEF29F8D5AF00D1CF6B /* MainDetailView.swift in Sources */,
-				04CDABDD29F8A95D00D1CF6B /* AsyncImageCircleTypeSection.swift in Sources */,
+				04CDABDD29F8A95D00D1CF6B /* CircledImage.swift in Sources */,
 				04CDABD429F885D000D1CF6B /* Result.swift in Sources */,
 				04BC0A522A0573C000DBE79D /* ImageLinkSection.swift in Sources */,
 				04CDABD929F8899200D1CF6B /* SplashView.swift in Sources */,
@@ -386,7 +383,6 @@
 				04CDABCE29F86A0600D1CF6B /* CGFloat.swift in Sources */,
 				04CDABF729F8F26500D1CF6B /* PhoneView.swift in Sources */,
 				04E5310B29FB598500384FE8 /* ImageSystemNameSection.swift in Sources */,
-				04BC0A4E2A0573B200DBE79D /* DismissCancelSection.swift in Sources */,
 				04E5310529FADB2900384FE8 /* ComuniListView.swift in Sources */,
 				04E5310929FAE31900384FE8 /* OpenChatView.swift in Sources */,
 				04CDABD629F8860B00D1CF6B /* NetworkManager.swift in Sources */,

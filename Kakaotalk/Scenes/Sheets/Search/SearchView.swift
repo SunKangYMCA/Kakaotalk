@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     @StateObject var viewModel: SearchViewModel = SearchViewModel()
     
     private let rows: [GridItem] = [GridItem(.flexible())]
@@ -26,14 +28,16 @@ struct SearchView: View {
                     opacity: 0.2,
                     keyboardType: .default
                 )
-                DismissCancelSection(
-                    title: "Cancle",
-                    font: .normalBold,
-                    textColor: .black,
-                    onSubmit: {
-                        print("## test submit dismiss")
-                    }
-                )
+                Button {
+                    dismiss()
+                } label: {
+                    Text("Cancel")
+                        .font(.skFont(type: .smallBold))
+                        .foregroundColor(.black)
+                }
+                .onSubmit {
+                    print("## Test Submit dismiss")
+                }
                 .padding(.trailing, 32)
             }
             
@@ -70,7 +74,7 @@ struct SearchView: View {
             LazyHGrid(rows: rows) {
                 ForEach(users) { user in
                     HStack {
-                        AsyncImageCircleTypeSection(
+                        CircledImage(
                             title: user.thumbnailPictureURL,
                             width: 36,
                             height: 36,

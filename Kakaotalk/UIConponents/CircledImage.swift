@@ -1,5 +1,5 @@
 //
-//  AsyncImageCircleTypeSection.swift
+//  CircledImage.swift
 //  Kakaotalk
 //
 //  Created by 강성찬 on 2023-05-04.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AsyncImageCircleTypeSection: View {
+struct CircledImage: View {
     
     private let title: URL?
     private let width: CGFloat
@@ -44,8 +44,8 @@ struct AsyncImageCircleTypeSection: View {
 }
 
 
-struct AsyncImageCircleTypeSection_Previews: PreviewProvider {
+struct CircledImage_Previews: PreviewProvider {
     static var previews: some View {
-        AsyncImageCircleTypeSection(title: URL(string: ""), width: 5, height: 5, placeholderSysname: "123")
+        CircledImage(title: URL(string: ""), width: 5, height: 5, placeholderSysname: "123")
     }
 }

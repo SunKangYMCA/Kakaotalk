@@ -66,7 +66,7 @@ struct ComuniDetailView: View {
     
     private var yourChatSection: some View {
         HStack {
-            AsyncImageCircleTypeSection(
+            CircledImage(
                 title: user.thumbnailPictureURL,
                 width: 48,
                 height: 48,
