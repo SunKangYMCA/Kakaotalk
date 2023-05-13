@@ -86,3 +86,9 @@ struct SplashView_Previews: PreviewProvider {
         SplashView()
     }
 }
+
+struct SplashScreen: View {
+    var body: some View {
+        Text("")
+    }
+}

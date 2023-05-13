@@ -14,6 +14,7 @@ class MainViewModel: ObservableObject {
     @Published var shouldShowSettingView: Bool = false
     
     @Published var users: [User] = []
+    @Published var currentPage: Int = 0
     
     private var networkManager: NetworkManager = NetworkManager.shared
     
@@ -23,14 +24,14 @@ class MainViewModel: ObservableObject {
         fetchUsers()
     }
     
-    func fetchUsers() {
-        networkManager.fetchUsers { fetchedUsers, error in
+    func fetchUsers(pageIndex: Int = 0) {
+        networkManager.fetchUsers(pageIndex: pageIndex) { fetchedUsers, error in
             DispatchQueue.main.async {
                 guard let fetchedUsers = fetchedUsers else {
                     if let error = error {}
                     return
                 }
-                self.users = fetchedUsers
+                self.users.append(contentsOf: fetchedUsers)
             }
         }
     }

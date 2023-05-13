@@ -23,8 +23,7 @@ struct MainListView: View {
      
             VStack {
                 HStack {
-                    TextSection(
-                        title: user.fullName,
+                    TextSection(title: user.fullName,
                         font: .smallBold,
                         textColor: .black
                     )

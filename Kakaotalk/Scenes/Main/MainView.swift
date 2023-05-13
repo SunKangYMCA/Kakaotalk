@@ -12,17 +12,44 @@ struct MainView: View {
     @StateObject var viewModel: MainViewModel = MainViewModel()
     
     var body: some View {
-        
-        List {
-            ForEach(viewModel.users) { user in
-                NavigationLink {
-                    MainDetailView(user: user)
+        VStack {
+            HStack {
+                Button {
+                    viewModel.currentPage -= 1
+                    viewModel.fetchUsers(pageIndex: viewModel.currentPage)
                 } label: {
-                    MainListView(user: user)
+                    Text("Prev")
+                }
+                
+                Spacer()
+                
+                Button {
+                    viewModel.currentPage += 1
+                    viewModel.fetchUsers(pageIndex: viewModel.currentPage)
+                } label: {
+                    Text("Next")
+                }
+
+            }
+                
+            List {
+                ForEach(viewModel.users) { user in
+                    NavigationLink {
+                        MainDetailView(user: user)
+                    } label: {
+                        MainListView(user: user)
+                    }
+                    .onAppear {
+                        if viewModel.users.last == user {
+                            print("##test showing last user")
+                            print("##test fetch nextpage")
+                            viewModel.currentPage += 1
+                            viewModel.fetchUsers(pageIndex: viewModel.currentPage)
+                        }
+                    }
                 }
             }
         }
-        
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Text("Friends")
@@ -31,11 +58,8 @@ struct MainView: View {
         }
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button {
+                NavigationButton(type: .search) {
                     viewModel.shouldShowSearchView.toggle()
-                } label: {
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.black)
                 }
                 
                 Button {

@@ -11,9 +11,10 @@ final class NetworkManager {
     static var shared = NetworkManager()
     
     func fetchUsers(
+        pageIndex: Int = 0,
         completion: @escaping ([User]?, Error?) -> Void
     ) {
-        let urlString: String = "https://randomuser.me/api/?results=20"
+        let urlString: String = "https://randomuser.me/api/?results=20&page=\(pageIndex)&seed=abc"
         guard let url: URL = URL(string: urlString) else { return }
         let urlRequest: URLRequest = URLRequest(url: url)
         
